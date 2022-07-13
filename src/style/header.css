@@ -1,6 +1,5 @@
 .logo_kasa {
   height: 3em;
-  margin-left: -2em;
 }
 
 .header {
@@ -16,7 +15,7 @@
 }
 
 a {
-  padding-left: 2em;
+  padding: 2em;
   text-decoration: none;
   color: #ff6060;
   font-weight: 500;

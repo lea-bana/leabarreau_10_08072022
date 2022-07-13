@@ -1,16 +1,16 @@
+.about {
+  margin-bottom: 4.2em;
+}
+
 .banner {
   margin: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 223px;
-  width: 95%;
+  width: 90%;
   border-radius: 25px;
   display: table;
-}
-
-.about {
-  margin-bottom: 4.2em;
 }
 
 .text-banner-home {
