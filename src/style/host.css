@@ -1,0 +1,47 @@
+.info {
+  color: #ff6060;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.info-top {
+  display: flex;
+  flex-direction: column;
+}
+.info-accomodation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.accomodation-page {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.host {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.host-pic {
+  border-radius: 50%;
+  width: 5em;
+}
+
+.host h3 {
+  padding-right: 5em;
+  white-space: normal;
+  width: 2em;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 426px) {
+  .host-pic {
+    width: 3em;
+  }
+}

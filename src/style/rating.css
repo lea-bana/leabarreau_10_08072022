@@ -1,0 +1,33 @@
+.star {
+  width: 1.6em;
+  padding-bottom: 1em;
+}
+
+.star-empty {
+  width: 1.6em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.rating > img {
+  margin: 0.2em;
+}
+
+@media screen and (max-width: 426px) {
+  .star {
+    width: 1em;
+    padding-bottom: 0.4em;
+  }
+
+  .star-empty {
+    width: 1em;
+    padding-bottom: 0.4em;
+    padding-top: 1em;
+  }
+}

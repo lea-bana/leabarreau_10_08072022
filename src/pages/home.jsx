@@ -2,12 +2,36 @@ import Banner from "../components/banner";
 import { Link } from "react-router-dom";
 import logements from "../data/logements.json";
 import Thumbnail from "../components/thumbnail";
+import { useEffect, useState } from "react";
 
 function Home() {
-  return (
-    /* coder si le fetch ne marche pas je reçois un mesage d'erreur-404????*/
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-    <div className="home_container">
+  useEffect(() => {
+    const fetchJSON = () => {
+      fetch("src/data/logements.json")
+        .then((res) => res.text())
+        .then(
+          () => {
+            setIsLoaded(true);
+          },
+          (error) => {
+            setIsLoaded(true);
+            setError(error);
+          }
+        );
+    };
+
+    fetchJSON();
+  }, []);
+
+  return error ? (
+    <p>Erreur </p>
+  ) : !isLoaded ? (
+    <p>loading... </p>
+  ) : (
+    <div className="home-container">
       <Banner />
       <div className="accomodation-container">
         {logements.logements.map((house) => (

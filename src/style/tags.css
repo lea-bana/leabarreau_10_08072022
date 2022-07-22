@@ -1,0 +1,39 @@
+.tag {
+  list-style-type: none;
+  padding: 0.2em 1em;
+  background: #ff6060;
+  border-radius: 10px;
+  color: white;
+  margin: 0.4em;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: -1em;
+  margin-left: -3em;
+}
+
+.tags > ul {
+  margin: 0em;
+  padding-left: 0em;
+  margin-bottom: -1em;
+}
+
+.info-bottom > ul {
+  padding-left: 0em;
+}
+
+@media screen and (max-width: 426px) {
+  .tags {
+    margin-left: -2.1em;
+    display: flex;
+    margin-top: -0.4em;
+    margin-bottom: 0.1em;
+  }
+
+  .tag {
+    padding: 0.2em 0.6em;
+    font-size: 0.7em;
+    border-radius: 5px;
+  }
+}
