@@ -1,8 +1,7 @@
 .footer {
-  height: 8em;
   background-color: black;
   color: white;
-  margin: unset;
+  margin-top: 2em;
 }
 
 .credits {
@@ -17,13 +16,21 @@
   padding-bottom: 0.5em;
 }
 
-@media screen and (max-width: 425px) {
-  .footer {
-    height: 6em;
+@media (max-width: 550px) {
+  .logo {
+    padding-bottom: 0em;
+  }
+  .logo-footer {
+    width: 122px;
+    height: 40px;
   }
 
   .credits {
     padding-top: 1.5em;
     line-height: 2.4em;
+  }
+  .copyright {
+    width: 190px;
+    height: 39px;
   }
 }

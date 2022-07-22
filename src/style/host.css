@@ -17,8 +17,8 @@
 }
 
 .accomodation-page {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 8em;
+  margin-right: 10em;
 }
 
 .host {
@@ -40,8 +40,25 @@
   font-size: 1em;
 }
 
-@media screen and (max-width: 426px) {
+@media (max-width: 550px) {
   .host-pic {
     width: 3em;
+  }
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .host {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .accomodation-page {
+    margin: unset;
   }
 }

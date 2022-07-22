@@ -8,7 +8,7 @@
   background-position: center;
   background-size: cover;
   height: 223px;
-  width: 90%;
+  width: 1240px;
   border-radius: 25px;
   display: table;
 }
@@ -25,8 +25,9 @@
   line-height: 68px;
 }
 
-@media only screen and (max-width: 426px) {
+@media (max-width: 700px) {
   .banner {
+    width: 335px;
     height: 111px;
     border-radius: 10px;
     margin: auto;
