@@ -40,7 +40,7 @@ a {
   font-size: 24px;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 450px) {
   .logo_kasa {
     height: 2em;
     margin-left: 0em;
@@ -67,5 +67,18 @@ a {
   .navbar > a {
     padding: unset;
     font-size: 12px;
+  }
+}
+@media (min-width: 451px) and (max-width: 1024px) {
+  .header {
+    height: auto;
+  }
+  .logo_kasa {
+    height: 60px;
+  }
+  .header {
+    align-content: center;
+    margin: 1em;
+    width: 1024px;
   }
 }

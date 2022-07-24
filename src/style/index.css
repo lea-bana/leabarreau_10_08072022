@@ -8,3 +8,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+@media (min-width: 451px) and (max-width: 1024px) {
+  body {
+    width: fit-content;
+  }
+}
