@@ -47,5 +47,26 @@ function Carrousel({ pictures }) {
       </section>
     );
   }
+  if (pictures.length <= 1) {
+    return (
+      <section className="carrousel-container">
+        {pictures.map((picture, index) => {
+          return (
+            <div
+              key={picture}
+              className={index === current ? "picture show" : "picture"}
+            >
+              {index === current && (
+                <img src={picture} alt="carrousel" className="carrousel-img" />
+              )}
+              <div className="index">
+                {current + 1}/{pictures.length}
+              </div>
+            </div>
+          );
+        })}
+      </section>
+    );
+  }
 }
 export default Carrousel;

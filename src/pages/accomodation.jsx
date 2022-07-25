@@ -10,7 +10,7 @@ import Rating from "../components/rating";
 function Accomodation() {
   const { id } = useParams();
   const accomodationById = logements.logements.find((house) => house.id === id);
-  console.log(accomodationById);
+  //console.log(accomodationById);
 
   if (!accomodationById) {
     return <Error />;
